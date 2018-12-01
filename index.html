@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="refresh" content="0;url=pages/index.html">
-<title>SB Admin 2</title>
-<script language="javascript">
-    window.location.href = "pages/index.html"
-</script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
-Go to <a href="pages/index.html">/pages/index.html</a>
+
+<body onload="loadQuestions()">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">NucMath</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="question-container" class="container">
+
+        <script id="question-template" type="x-tmpl-mustache">
+                <div id="image-container"></div>
+                <h4>{{ question }}</h4>
+                <br>
+                <form action="#">
+                    <p>
+                        <label>
+                            <input type="radio" checked />
+                            <span>Red</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" />
+                            <span>Yellow</span>
+                        </label>
+                    </p>
+        
+                    <br>
+                    <button class="waves-effect waves-light btn">Submit</button>
+                </form>
+        </script>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/mustache.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

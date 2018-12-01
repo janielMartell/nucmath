@@ -1,0 +1,31 @@
+.nav-wrapper {
+    background-color: #5C6BC0;
+}
+.secondary-content>.material-icons {
+    background-color: #5C6BC0;
+}
+.btn {
+    background-color: #5C6BC0;
+}
+.page-footer {
+    background-color: #5C6BC0;
+}
+.input-field {
+    color: #5C6BC0;
+}
+.input-field>.material-icons {
+    color: #5C6BC0;
+}
+.input-field>label {
+    color: #5C6BC0;
+}
+.dropdown-content>li>a {
+    color: #5C6BC0;
+}
+[type="radio"] {
+    color: #5C6BC0;
+}
+.brand-logo {
+    font-family: 'Pacifico', cursive;
+    margin-left: 15px;
+}
